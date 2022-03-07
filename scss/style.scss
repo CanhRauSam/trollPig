@@ -8,20 +8,24 @@ html {
 .wrapper {
     max-width: 1600px;
     margin: 0 auto;
-    position: relative;
     .form{
         position: fixed;
-        z-index: 1;
-        background-color: rgba(0,0,0,0.8);
-        inset: 0;
-
+        z-index: 10;
+        background-color: rgb(0,0,0);
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         .formInput{
             position: absolute;
             padding: 30px 15px;
             background-color: white;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            // top: 50%;
+            // left: 50%;
+            // transform: translate(-50%, -50%);
             text-align: center;
             border-radius: 10px;
             box-shadow: 0 0 5px #c94646;
@@ -73,11 +77,20 @@ html {
             font-size: 30px;
             color: #dfc71d;
             margin-bottom: 20px;
+            @media screen and (max-width: 767px) {
+                text-align: center;
+                line-height: 1.6;
+                max-width: 100vw;
+                margin-bottom: 0px;
+            }
         }
         .desc{
             font-size: 20px;
             color: #ccdb71;
             margin-bottom: 50px;
+            @media screen and (max-width: 767px) {
+                margin-bottom: 100px;
+            }
         }
         .btn {
             position: absolute;

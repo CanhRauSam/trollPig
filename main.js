@@ -30,7 +30,10 @@ function addFriendName(name) {
     btnRun.innerText = name;
 };
 
-btnRun.onmouseover = function () {
+btnRun.onmouseover = runBtnRun;
+btnRun.onclick = runBtnRun;
+
+function runBtnRun() {
     let newX = Math.floor(Math.random() * 100);
     let newY = Math.floor(Math.random() * 100);
     console.log(newX, newY);
@@ -38,6 +41,7 @@ btnRun.onmouseover = function () {
     btnRun.style.left = newY + '%';
     desc.innerText = 'Sai rồi xem bạn êi =))';
 };
+
 
 btnSuccess.onmouseover = function () {
     desc.innerText = 'Đoán xem =)))';
