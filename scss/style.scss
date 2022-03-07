@@ -1,0 +1,111 @@
+@import "typography";
+@import "variables";
+
+html {
+    font-size: 62.5%;
+}
+
+.wrapper {
+    max-width: 1600px;
+    margin: 0 auto;
+    position: relative;
+    .form{
+        position: fixed;
+        z-index: 1;
+        background-color: rgba(0,0,0,0.8);
+        inset: 0;
+
+        .formInput{
+            position: absolute;
+            padding: 30px 15px;
+            background-color: white;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 0 5px #c94646;
+            .form-group{
+                margin-bottom: 20px;
+                display: flex;
+                flex-direction: column;
+                label{
+                    margin-bottom: 10px;
+                }
+                input{
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                    border: 1px solid #333;
+                    outline: none;
+                }
+            }
+            button{
+                width: 50%;
+                padding: 5px 0;
+                border-radius: 5px;
+                background-color: greenyellow;
+                color: #343434;
+                outline: none;
+                border: 2px solid #474444;
+                box-shadow: 0 2px 5px #333;
+                cursor: pointer;
+                font-weight: 500;
+                font-size: 18px;
+            }
+        }
+    }
+    .form.hide {
+        display: none;
+    }
+    .container { 
+        min-height: 100vh;
+        max-width: 1300px;
+        margin: 0 auto;
+        padding: 0 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-image: linear-gradient(to bottom right, #ad802c, rgb(126, 35, 126));
+        position: relative;
+        overflow: hidden;
+        .title{
+            font-size: 30px;
+            color: #dfc71d;
+            margin-bottom: 20px;
+        }
+        .desc{
+            font-size: 20px;
+            color: #ccdb71;
+            margin-bottom: 50px;
+        }
+        .btn {
+            position: absolute;
+            width: 100px;
+            border: none;
+            outline: none;
+            background-color: pink;
+            padding: 7px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            color: #5a5b55;
+            top: calc(50% + 50px);
+            transition: 0.3s ease;
+            transform: translate(-50%, -50%);
+            font-size: 18px;
+        }
+        .btn-success{
+            left: calc(50% - 70px);
+            &:hover{
+                background-color: rgb(223, 109, 128);
+            }
+        }
+        .btn-run{
+            left: calc(50% + 60px);
+            &:hover{
+                background-color: rgb(110, 109, 107);
+            }
+        }
+    }
+}
+

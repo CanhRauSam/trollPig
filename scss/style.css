@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+}
+
+ul, li {
+  list-style: none;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  background-color: #f8f3ed;
+  font-size: 16px;
+  line-height: 1;
+  color: #222120;
+}
+
+.font-heading {
+  font-family: "Prata";
+  font-weight: 400;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.wrapper {
+  max-width: 1600px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.wrapper .form {
+  position: fixed;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.8);
+  inset: 0;
+}
+
+.wrapper .form .formInput {
+  position: absolute;
+  padding: 30px 15px;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 5px #c94646;
+          box-shadow: 0 0 5px #c94646;
+}
+
+.wrapper .form .formInput .form-group {
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wrapper .form .formInput .form-group label {
+  margin-bottom: 10px;
+}
+
+.wrapper .form .formInput .form-group input {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #333;
+  outline: none;
+}
+
+.wrapper .form .formInput button {
+  width: 50%;
+  padding: 5px 0;
+  border-radius: 5px;
+  background-color: greenyellow;
+  color: #343434;
+  outline: none;
+  border: 2px solid #474444;
+  -webkit-box-shadow: 0 2px 5px #333;
+          box-shadow: 0 2px 5px #333;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.wrapper .form.hide {
+  display: none;
+}
+
+.wrapper .container {
+  min-height: 100vh;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#ad802c), to(#7e237e));
+  background-image: linear-gradient(to bottom right, #ad802c, #7e237e);
+  position: relative;
+  overflow: hidden;
+}
+
+.wrapper .container .title {
+  font-size: 30px;
+  color: #dfc71d;
+  margin-bottom: 20px;
+}
+
+.wrapper .container .desc {
+  font-size: 20px;
+  color: #ccdb71;
+  margin-bottom: 50px;
+}
+
+.wrapper .container .btn {
+  position: absolute;
+  width: 100px;
+  border: none;
+  outline: none;
+  background-color: pink;
+  padding: 7px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #5a5b55;
+  top: calc(50% + 50px);
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 18px;
+}
+
+.wrapper .container .btn-success {
+  left: calc(50% - 70px);
+}
+
+.wrapper .container .btn-success:hover {
+  background-color: #df6d80;
+}
+
+.wrapper .container .btn-run {
+  left: calc(50% + 60px);
+}
+
+.wrapper .container .btn-run:hover {
+  background-color: #6e6d6b;
+}
+/*# sourceMappingURL=style.css.map */
