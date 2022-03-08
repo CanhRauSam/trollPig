@@ -5,11 +5,12 @@ const title = document.querySelector('.title');
 const desc = document.querySelector('.desc');
 
 const form = document.querySelector('.form');
-const btnSubmit = document.querySelector('.btn-submit');
+// const btnSubmit = document.querySelector('.btn-submit');
 const yourName = document.querySelector('#your-name');
 const friendName = document.querySelector('#friend-name');
 
-btnSubmit.onclick = function () {
+form.onsubmit = function (e) {
+    e.preventDefault();
     if (yourName.value && friendName.value) {
         addYourName(yourName.value);
         addFriendName(friendName.value);
